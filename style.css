@@ -84,13 +84,14 @@ body{
     justify-content: center;
  }
 
+
 @media (min-width:768px){
     .navbar{
         justify-content:space-between ;
         padding: 10px 20px;
     }
     .navbar__brand{
-        width:150px;
+        width:100px;
     }
     .button__primary{
         padding: 12px 20px;
@@ -104,6 +105,34 @@ body{
         gap: 10px;
     }
 
+    .explore__menu__container{
+        position: relative;
+    }
+
+    .explore__menu__bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0% ,#dd2476 51% , #ff512f 100% 
+    ) ;
+
+    z-index: -3;
+    transform: skewy(-5deg);
+    }
+    .explore__menu__lists{
+        display: flex;
+        gap: 15px;
+
+    }
+    
+    #veg__roll{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
 }
 @media (min-width:1020px) {
     .container{
@@ -111,6 +140,14 @@ body{
     }
 
    .hero__text{
+    font-size: 50px;
+   }
+
+   .explore__menu__lists{
+    gap: 20px;
+    padding: 0 20px;
+   }
+   .explore__menu__text{
     font-size: 50px;
    }
 }
